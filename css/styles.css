@@ -147,11 +147,11 @@ nav{
 }
 
 .active-link::after{
+    display: block;
     position: absolute;
     left: 0;
-    display: block;
-    margin-top: 29px;
-    width: 100%;
+    margin-top: 38px;
+    width: 50%;
     height: 4px;
     border-radius: 2px;
     content: '';
