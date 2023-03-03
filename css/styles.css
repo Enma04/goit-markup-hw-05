@@ -135,10 +135,34 @@ nav{
     color: var(--blue-color);
 }
 
-.pag-active {
+.active-page{
+    position: relative;
+}
+
+.active-link {
     font-size: 14px;
     font-weight: 500;
     color: var(--blue-color);
+}
+
+.active-bar-studio {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 45px;
+    height: 5px;
+    border-radius: 4px;
+    background-color: var(--blue-color);
+}
+
+.active-bar-portafolio{
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 65px;
+    height: 5px;
+    border-radius: 4px;
+    background-color: var(--blue-color);
 }
 
 .navegation-info{
