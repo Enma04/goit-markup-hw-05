@@ -99,9 +99,22 @@
             SOLUCIONES EFICACES PARA <br />
             SU NEGOCIO
           </h1>
-          <button type="button" class="boton1">
+          <button type="button" class="boton1" data-modal-open>
             Solicite nuestro servicio
           </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Inventore aliquid omnis blanditiis laudantium deleniti cumque
+                eos in mollitia doloremque a voluptatum distinctio itaque
+                dolores corporis fugit, vel voluptas aperiam beatae.
+              </p>
+              <button type="button" class="close-btn" data-modal-close>
+                X
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -173,12 +186,21 @@
                 width="357"
                 alt="flujo de código"
               />
+              <div class="small-description">
+                <p>Aplicaciones de escritorio</p>
+              </div>
             </li>
             <li>
               <img src="./images/imagen2.jpg" width="357" alt="calulares" />
+              <div class="small-description">
+                <p>Aplicaciones móviles</p>
+              </div>
             </li>
             <li>
               <img src="./images/imagen3.jpg" width="357" alt="tableta" />
+              <div class="small-description">
+                <p>Soluciones de diseño</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -613,5 +635,6 @@
         </div>
       </section>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
