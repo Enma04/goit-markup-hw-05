@@ -597,10 +597,36 @@ nav{
     box-sizing: border-box;
     flex-basis: calc((100% - 60px) / 3);
     border: 1px solid #EEEEEE;
+    overflow: hidden;
 }
 
 .img-services:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.img-services:hover .tarjeta-emergente{
+    transform: translateY(0%);
+}
+
+.card-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.tarjeta-emergente{
+    position: absolute;
+    width: inherit;
+    height: 294px;
+    padding: 63px 24px;
+    top: 0;
+    background: rgba(33, 150, 243, 0.9);
+    color: white;
+    font-size: 18px;
+    line-height: 1.6; /* (28/18) = 1.555555556 */
+    letter-spacing: 0.3;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cont-img-services{
