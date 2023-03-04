@@ -122,13 +122,16 @@ nav{
     margin-left: 93px;
 }
 
+.navegation-list > li:not(:last-child){
+    margin-right: 50px;
+}
+
 .navegation-links {
     display: block;
     font-size: 14px;
     font-weight: 500;
     color: var(--black-color);
     padding: 38px 0px;
-    margin-left: 50px;
 }
 
 .navegation-links:hover,
@@ -149,35 +152,13 @@ nav{
 .active-link::after{
     display: block;
     position: absolute;
-    left: 0;
-    margin-top: 30px;
-    margin-left: 50px;
-    width: 50%;
+    width: 100%;
     height: 4px;
     border-radius: 2px;
+    bottom: -3px;
     content: '';
     background-color: var(--blue-color);
 }
-
-/* .active-bar-studio {
-    position: absolute;
-    bottom: 0;
-    left: 50px;
-    width: 48px;
-    height: 4px;
-    border-radius: 4px;
-    background-color: var(--blue-color);
-} */
-
-/* .active-bar-portafolio{
-    position: absolute;
-    bottom: 0;
-    left: 50px;
-    width: 78px;
-    height: 4px;
-    border-radius: 4px;
-    background-color: var(--blue-color);
-} */
 
 .navegation-info{
     display: flex;
@@ -347,6 +328,7 @@ nav{
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
     background: rgba(0, 0, 0, 0.2);
     visibility: visible;
 }
@@ -361,14 +343,17 @@ nav{
     width: 528px;
     height: 581px;
     padding: 2%;
-    left: calc(50% - 264px);
-    top: 221px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
     background-color: white;
     color: #212121;
     display: flex;
 }
 
 .modal > p{
+    position: absolute;
     width: 70%;
     padding: 10px;
     margin-top: 20px;
